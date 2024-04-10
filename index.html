@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Gen</title>
+    <script src="https://kit.fontawesome.com/fec167cad8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <h1>Generate a <br><span>Random Passcode</span></h1>
+            <div class="display">
+                <input type="text" id="passcodeLength" placeholder="Enter Passcode Length">
+            </div>
+            <div class="display">
+                <input type="text" id="passcode" placeholder="Passcode">
+                <p><i class="fa-solid fa-copy" onclick="copyPasscode()"></i></p>
+            </div>
+            <button id="generate-btn" onclick="createPasswordWhileLoop()"><i class="fa-solid fa-bolt-lightning"></i> Generate</button>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="container2">
+            <h1><span class="one">Passcode</span> <span>List.!</span></h1>
+            <div class="passcodegenerated">
+                <textarea name="passcodes" id="passcodeCopies" cols="20" rows="20"></textarea>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
